@@ -4,7 +4,7 @@ resource "helm_release" "vault" {
   chart     = "${path.module}/vault-helm"
   namespace = data.terraform_remote_state.consul.outputs.namespace
   set {
-    name = "ha.enabled"
+    name = "server.ha.enabled"
     value = "true"
     }
 }
