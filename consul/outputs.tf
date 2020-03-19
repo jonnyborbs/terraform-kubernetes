@@ -2,6 +2,6 @@ output "namespace" {
   value = var.namespace
 }
 
-output "environment" {
-  value = var.environment
+output "release_name" {
+  value = var.release_name
 }

@@ -1,11 +1,11 @@
-variable "environment" {
+variable "release_name" {
   type        = string
-  description = "Environment to describe Consul Helm release"
+  description = "Helm Release name for Consul chart"
 }
 
 variable "namespace" {
   type        = string
-  description = "Namespace to which to deploy the Consul Helm chart"
+  description = "Namespace to deploy the Consul Helm chart"
 }
 
 variable "cluster_workspace" {
@@ -20,6 +20,6 @@ variable "organization" {
 
 variable "replicas" {
   type        = number
-  default     = 3
+  default     = 1
   description = "Number of consul replicas"
 }
