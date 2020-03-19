@@ -7,8 +7,4 @@ resource "helm_release" "vault" {
     name = "ha.enabled"
     value = "true"
     }
-  set {
-    name = "ha.replicas" 
-    value = "1"
-    }
 }
