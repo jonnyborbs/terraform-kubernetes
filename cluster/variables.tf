@@ -35,6 +35,6 @@ variable "password" {
 
 variable "enable_consul_and_vault" {
   type        = bool
-  default     = false
+  default     = true
   description = "Enable consul and vault for the secrets cluster"
 }
